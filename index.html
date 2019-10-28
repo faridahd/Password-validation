@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="validation.js"></script>
+    </head>
+    <body>
+        <div id="validate">
+            <form id="myForm" method="post">
+                <label id="lbl">Enter a password: </label>
+                <input type="password" id="pass1">
+
+                <label id="lbl">A valid password is the one that conforms to the following rules:</label>
+                <ul id="myList">
+                    <li id="minLen">Minimum length is 5</li>
+                    <li id="maxLen">Maximum length is 10</li>
+                    <li id="contNum">Should contain at least one number</li>
+                    <li id="speChar">Should contain at least one special character 
+                        (such as &, +, @, $, #, %, etc.)</li>
+                    <li id="noSpace">Should not contain spaces</li>
+                </ul>
+
+                <label id="lbl">Enter the password again: </label>
+                <input type="password" id="pass2">
+                
+                <input type="submit" id="submit">
+            </form>
+            
+        </div>
+    </body>
+</html>
