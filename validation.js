@@ -86,14 +86,14 @@ window.onload = function(){
         if(password1.value != "" && password2.value != ""){
             //check if #pass1 and #pass2 are the same
             if(password1.value == password2.value){
-                //if(req1 && req2 && req3 && req4 && req5){
+                //check if all validations from the list are set
                 if(checkMin() && checkMax() && checkNum() && checkSpChar() && noSpace()){
                     document.body.style.opacity = "0.1";
                     formatting();
                     setTimeout(reloadMe, 2000);
                     return true;
                 } else {
-                    alert("Error! Your password do not meat the requirements");
+                    alert("Error! Your password do not meet the requirements");
                 }
                 
             }
